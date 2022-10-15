@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-lg">
+        <h1> Edit existing article form </h1>
+    </div>
+    
+    </div class="col-lg">
+        <form action="/articles/<%=@article.id %>" method="POST">
+
+            <input id="hidden" type="hidden" name="_method" value="PATCH">
+            
+            <label for="title">Title: </label><br>
+            <input type="text" name="title" value="<%= @article.title %>">
+            <br><br>
+
+            <label for="content">Content: </label><br>
+            <input type="content" name="content" value="<%= @article.content %>">
+            <br><br>
+
+            <input type="submit" id="submit" value="Submit">
+        </forms>
+    </div>  
+</div>

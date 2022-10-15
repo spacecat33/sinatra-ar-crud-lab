@@ -1,0 +1,13 @@
+<div class="row">
+    <h1><%= @article.title %></h1>
+    <p><%= @article.content %></p>
+    #should show an individual article. That view should 
+    # use ERB to render the @article's title and content.
+</div>
+
+<div class="row">
+    <form action="/articles/<%= @article.id %>" method="POST">
+        <input id="hidden" type="hidden" name="_method" value="DELETE">
+        <input type="submit" id="submit" value="Delete"
+    </form>
+</div>
